@@ -63,3 +63,6 @@
 ;; Highlight zshrc files
 (add-to-list 'auto-mode-alist
              '("\\(.zshrc\\)\\'" . shell-script-mode))
+
+;; Highlight current line
+(global-hl-line-mode)
