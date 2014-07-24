@@ -1,12 +1,21 @@
+;; MELPA
 (require 'package)
 (add-to-list 'package-archives
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
-;; >:D
+;; >:D - "Mwahaha!"
+(global-evil-leader-mode)
 (add-to-list 'load-path "~/.emacs.d/evil")
 (require 'evil)
 (evil-mode 1)
+
+(evil-leader/set-leader ",")
+
+(evil-leader/set-key
+ "e" 'find-file
+ "b" 'switch-to-buffer
+ "k" 'kill-buffer)
 
 ;; Load ruby mode with these extensions, too!
 (add-to-list 'auto-mode-alist
