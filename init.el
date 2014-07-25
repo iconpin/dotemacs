@@ -46,8 +46,9 @@
 (load-theme 'solarized-light t)
 (setq solarized-use-terminal-theme t)
 
-;; No menu bar
+;; No menu bar, no tool bar
 (menu-bar-mode -1)
+(tool-bar-mode -1)
 
 ;; Minor tweaks
 (evil-set-initial-state 'git-commit-mode 'insert)
@@ -70,3 +71,7 @@
 
 ;; Highlight current line
 (global-hl-line-mode)
+
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(ac-config-default)
