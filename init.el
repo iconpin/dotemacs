@@ -64,5 +64,9 @@
 (add-to-list 'auto-mode-alist
              '("\\(.zshrc\\)\\'" . shell-script-mode))
 
+;; Hihglight gitconfig files
+(add-to-list 'auto-mode-alist
+             '("\\(.gitconfig\\)\\'" . gitconfig-mode))
+
 ;; Highlight current line
 (global-hl-line-mode)
