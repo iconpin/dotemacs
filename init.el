@@ -31,7 +31,7 @@
 
 ;; Numbers!
 (global-linum-mode t)
-(setq linum-format "%d ")
+(setq linum-format "%3d ")
 (setq column-number-mode t)
 
 ;; Smooth sailin' -- scrolling
