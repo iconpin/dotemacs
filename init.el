@@ -52,7 +52,6 @@
 
 ;; Minor tweaks
 (evil-set-initial-state 'git-commit-mode 'insert)
-(evil-set-initial-state 'git-rebase-mode 'emacs)
 
 ;; Spaces only, please!
 (setq-default indent-tabs-mode nil)
@@ -65,7 +64,7 @@
 (add-to-list 'auto-mode-alist
              '("\\(.zshrc\\)\\'" . shell-script-mode))
 
-;; Hihglight gitconfig files
+;; Highlight gitconfig files
 (add-to-list 'auto-mode-alist
              '("\\(.gitconfig\\)\\'" . gitconfig-mode))
 
@@ -85,3 +84,7 @@
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+
+;; Customise mode line color
+(set-face-background 'mode-line "white")
+(set-face-foreground 'mode-line "cyan")
