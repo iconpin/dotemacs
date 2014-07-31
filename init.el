@@ -88,3 +88,6 @@
 ;; Customise mode line color
 (set-face-background 'mode-line "white")
 (set-face-foreground 'mode-line "cyan")
+
+(ido-mode 1)
+(setq ido-separator " ")
