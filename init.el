@@ -91,3 +91,6 @@
 
 (ido-mode 1)
 (setq ido-separator " ")
+
+;; RET -> ^j
+(define-key global-map (kbd "RET") 'newline-and-indent)
